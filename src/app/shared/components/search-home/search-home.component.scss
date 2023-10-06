@@ -1,0 +1,9 @@
+.header {
+  &-logo {
+    height: 40px;
+
+    .logo {
+      max-height: 100%;
+    }
+  }
+}
