@@ -1,0 +1,13 @@
+<div class="row d-flex align-items-end mb-5">
+  <div class="col-lg-10">
+    <input
+      [formControl]="searchQuery"
+      type="text"
+      class="form-control"
+      placeholder="Search"
+      aria-label="search">
+  </div>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-primary" [disabled]="!searchQuery.value" (click)="onSearch()">Search</button>
+  </div>
+</div>

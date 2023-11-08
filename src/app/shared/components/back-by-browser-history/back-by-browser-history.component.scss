@@ -1,0 +1,17 @@
+.go-back-btn {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  transition: color 0.3s ease, border 0.3s ease;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: #2d9cdb;
+    border: 1px solid #2d9cdb;
+    border-radius: 5px;
+  }
+}

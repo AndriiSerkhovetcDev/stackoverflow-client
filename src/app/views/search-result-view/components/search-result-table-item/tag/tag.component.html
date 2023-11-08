@@ -1,0 +1,7 @@
+<ng-container *ngFor="let tag of tags">
+  <button mat-raised-button color="accent" class="me-2 mb-2 mt-2" (click)="showMostPopularQuestionsByTag(tag)">{{ tag | decodeHtml }}</button>
+</ng-container>
+
+<ng-template #empty>
+  <p>Tag is empty</p>
+</ng-template>

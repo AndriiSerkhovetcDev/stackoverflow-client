@@ -1,0 +1,33 @@
+.owner-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer {
+
+  &-container {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  &-body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+h2 {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.accepted {
+  color: green;
+  font-size: 50px;
+  margin-right: 20px;
+}

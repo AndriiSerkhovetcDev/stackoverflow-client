@@ -1,0 +1,8 @@
+<div class="owner-container" *ngIf="answerOwner">
+  <img class="owner-avatar" [src]="answerOwner.profile_image" alt="Author">
+  <button
+    class="owner-btn"
+    (click)="showMostPopularAuthorAnswer(answerOwner.user_id)">
+    {{ answerOwner.display_name | decodeHtml }}
+  </button>
+</div>

@@ -1,0 +1,5 @@
+<mat-dialog-content>
+  <ng-container *ngIf="tableData$ | async as tableData">
+    <app-search-result-table [tableData]="tableData"></app-search-result-table>
+  </ng-container>
+</mat-dialog-content>

@@ -1,0 +1,4 @@
+<ng-container *ngIf="(searchResult$ | async) as searchResult">
+  <app-back-by-browser-history></app-back-by-browser-history>
+  <app-search-result-table [tableData]="searchResult"></app-search-result-table>
+</ng-container>
