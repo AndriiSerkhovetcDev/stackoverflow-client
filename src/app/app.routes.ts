@@ -1,15 +1,19 @@
 import { Routes } from '@angular/router';
-import { SearchHomeComponent } from "./shared/components/search-home/search-home.component";
+import { SearchViewComponent } from "./views/search-view/search-view.component";
 
 export const routes: Routes = [
   {
     path: '',
-    component: SearchHomeComponent,
+    component: SearchViewComponent,
     children: [
       {
         path: 'result',
-        loadComponent: () => import('./shared/components/search-result/search-result.component').then(c => c.SearchResultComponent)
+        loadComponent: () => import('./views/search-result-view/search-result-view.component').then(c => c.SearchResultViewComponent),
       },
+      {
+        path: 'question',
+        loadComponent: () => import('./views/question-view/question-view.component').then(c => c.QuestionViewComponent),
+      }
     ]
   },
   {

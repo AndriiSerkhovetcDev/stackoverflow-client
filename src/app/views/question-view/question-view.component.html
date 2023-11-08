@@ -1,0 +1,26 @@
+<div class="question-container">
+  <ng-container *ngIf="(question$ | async) as question">
+    <app-back-by-browser-history></app-back-by-browser-history>
+    
+    <div *ngFor="let item of question" class="">
+      <h1>{{ item.title | decodeHtml }}</h1>
+      <div [innerHTML]="item.body"></div>
+      <div class="owner-info">
+        <app-tag [tags]="item.tags"></app-tag>
+        <app-answer-owner [answerOwner]="item.owner"></app-answer-owner>
+      </div>
+
+      <h2>Answers</h2>
+    </div>
+  </ng-container>
+
+</div>
+<ng-container *ngIf="(answers$ | async) as answers">
+  <div *ngFor="let answer of answers" class="answer-container">
+    <div class="accepted" *ngIf='answer.is_accepted'> &#10003; </div>
+    <div class="answer-body">
+      <div [innerHTML]="answer.body"></div>
+      <app-answer-owner [answerOwner]="answer.owner"></app-answer-owner>
+    </div>
+  </div>
+</ng-container>

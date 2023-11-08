@@ -1,0 +1,11 @@
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.mat-mdc-cell {
+  padding: 10px !important;
+}
