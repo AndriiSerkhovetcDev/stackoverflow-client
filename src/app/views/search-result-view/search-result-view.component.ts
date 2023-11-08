@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
-import { SearchResultService } from "../../core/services/search-result/search-result.service";
+import { SearchResultService } from "@core/services/search-result/search-result.service";
 import { ActivatedRoute, Router } from "@angular/router";
-import { BehaviorSubject, catchError, of, takeUntil, throwError } from "rxjs";
-import { DestroyObsService } from "../../core/services/destroy-obs/destroy-obs.service";
+import { BehaviorSubject, catchError, takeUntil, throwError } from "rxjs";
+import { DestroyObsService } from "@core/services/destroy-obs/destroy-obs.service";
 import { SearchResultTableComponent } from "./components/search-result-table/search-result-table.component";
-import { IParsedSearchData } from "../../core/interfaces/interfaces";
-import { BackByBrowserHistoryComponent } from "../../shared/components/back-by-browser-history/back-by-browser-history.component";
-import { fadeAnimation } from "../../shared/animation/animation";
+import { IParsedSearchData } from "@core/interfaces/interfaces";
+import { BackByBrowserHistoryComponent } from "@shared/components/back-by-browser-history/back-by-browser-history.component";
+import { fadeAnimation } from "@shared/animation/animation";
 @Component({
   selector: 'app-search-result-view',
   standalone: true,

@@ -1,15 +1,16 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Api } from "../../enums/api";
 import { map, Observable } from "rxjs";
 import { IParsedSearchData, ISearchResult, ISearchResultItem } from "../../interfaces/interfaces";
+import { environment } from "@environments/environment";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchResultService {
   private _http = inject(HttpClient);
-  private _api = Api.apiUrl;
+  private _api = environment.apiUrl;
 
   public getSearchResult(query: string): Observable<IParsedSearchData[]> {
     const api = `${this._api}search?pagesize=100&order=desc&sort=votes&intitle=${encodeURIComponent(query)}&site=stackoverflow`;

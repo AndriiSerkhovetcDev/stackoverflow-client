@@ -1,8 +1,8 @@
-import { Component, inject, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from "@angular/router";
-import { IQuestion } from "../../../../../core/interfaces/interfaces";
-import { DecodeHtmlPipe } from "../../../../../shared/pipes/decode-html/decode-html.pipe";
+import { IQuestion } from "@core/interfaces/interfaces";
+import { DecodeHtmlPipe } from "@shared/pipes/decode-html/decode-html.pipe";
 
 @Component({
   selector: 'app-question',

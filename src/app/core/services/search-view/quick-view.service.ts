@@ -4,15 +4,16 @@ import { BehaviorSubject, map, Observable } from "rxjs";
 import { IParsedSearchData, ISearchResult } from "../../interfaces/interfaces";
 import { DestroyObsService } from "../destroy-obs/destroy-obs.service";
 import { HttpClient } from "@angular/common/http";
-import { Api } from "../../enums/api";
 import { MatDialogRef } from "@angular/material/dialog";
-import { QuickTableViewComponent } from "../../../views/quick-table-view/quick-table-view.component";
+import { QuickTableViewComponent } from "@views/quick-table-view/quick-table-view.component";
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class QuickViewService  {
-  private _api = Api.apiUrl;
+  private _api = environment.apiUrl;
   private _dialogRef = new BehaviorSubject<MatDialogRef<QuickTableViewComponent> | null>(null);
 
   constructor(

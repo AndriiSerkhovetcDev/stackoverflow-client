@@ -8,18 +8,28 @@ import {
 import { CommonModule } from '@angular/common';
 import { MatTableDataSource, MatTableModule } from "@angular/material/table";
 import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
-import { DecodeHtmlPipe } from "../../../../shared/pipes/decode-html/decode-html.pipe";
+import { DecodeHtmlPipe } from "@shared/pipes/decode-html/decode-html.pipe";
 import { MatButtonModule } from "@angular/material/button";
 import { TagComponent } from "../search-result-table-item/tag/tag.component";
 import { AnswerCountComponent } from "../search-result-table-item/answer-count/answer-count.component";
 import { AnswerOwnerComponent } from "../search-result-table-item/answer-owner/answer-owner.component";
 import { QuestionComponent } from "../search-result-table-item/question/question.component";
-import { IParsedSearchData } from "../../../../core/interfaces/interfaces";
+import { IParsedSearchData } from "@core/interfaces/interfaces";
 
 @Component({
   selector: 'app-search-result-table',
   standalone: true,
-  imports: [CommonModule, MatTableModule, MatPaginatorModule, DecodeHtmlPipe, MatButtonModule, TagComponent, AnswerCountComponent, AnswerOwnerComponent, QuestionComponent],
+  imports: [
+    CommonModule,
+    MatTableModule,
+    MatPaginatorModule,
+    DecodeHtmlPipe,
+    MatButtonModule,
+    TagComponent,
+    AnswerCountComponent,
+    AnswerOwnerComponent,
+    QuestionComponent
+  ],
   templateUrl: './search-result-table.component.html',
   styleUrls: ['./search-result-table.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

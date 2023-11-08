@@ -1,14 +1,14 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from "@angular/router";
-import { DestroyObsService } from "../../core/services/destroy-obs/destroy-obs.service";
-import { SearchResultService } from "../../core/services/search-result/search-result.service";
-import { BehaviorSubject, catchError, combineLatestWith, forkJoin, takeUntil, tap, throwError } from "rxjs";
+import { DestroyObsService } from "@core/services/destroy-obs/destroy-obs.service";
+import { SearchResultService } from "@core/services/search-result/search-result.service";
+import { BehaviorSubject, catchError, combineLatestWith, takeUntil, tap, throwError } from "rxjs";
 import { TagComponent } from "../search-result-view/components/search-result-table-item/tag/tag.component";
 import { AnswerOwnerComponent } from "../search-result-view/components/search-result-table-item/answer-owner/answer-owner.component";
-import { DecodeHtmlPipe } from "../../shared/pipes/decode-html/decode-html.pipe";
-import { BackByBrowserHistoryComponent } from "../../shared/components/back-by-browser-history/back-by-browser-history.component";
-import { ISearchResultItem } from "../../core/interfaces/interfaces";
+import { DecodeHtmlPipe } from "@shared/pipes/decode-html/decode-html.pipe";
+import { BackByBrowserHistoryComponent } from "@shared/components/back-by-browser-history/back-by-browser-history.component";
+import { ISearchResultItem } from "@core/interfaces/interfaces";
 
 @Component({
   selector: 'app-question-view',

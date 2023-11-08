@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PluralWordPipe } from "../../../../../shared/pipes/plural-word/plural-word.pipe";
-import { IAnswer } from "../../../../../core/interfaces/interfaces";
+import { PluralWordPipe } from "@shared/pipes/plural-word/plural-word.pipe";
+import { IAnswer } from "@core/interfaces/interfaces";
 import { Router } from "@angular/router";
 
 @Component({

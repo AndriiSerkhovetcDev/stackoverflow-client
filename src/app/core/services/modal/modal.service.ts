@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { MatDialog, MatDialogRef } from "@angular/material/dialog";
-import { QuickTableViewComponent } from "../../../views/quick-table-view/quick-table-view.component";
+import { QuickTableViewComponent } from "@views/quick-table-view/quick-table-view.component";
 import { IParsedSearchData } from "../../interfaces/interfaces";
 import { QuickViewService } from "../search-view/quick-view.service";
 

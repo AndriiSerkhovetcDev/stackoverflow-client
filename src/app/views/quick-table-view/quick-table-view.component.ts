@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogModule } from "@angular/material/dialog";
 import { SearchResultTableComponent } from "../search-result-view/components/search-result-table/search-result-table.component";
 import { BehaviorSubject } from "rxjs";
-import { IParsedSearchData } from "../../core/interfaces/interfaces";
+import { IParsedSearchData } from "@core/interfaces/interfaces";
 
 @Component({
   selector: 'app-quick-table-view',
