@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { SearchViewComponent } from "./views/search-view/search-view.component";
+import { SearchViewComponent } from "@views/search-view/search-view.component";
 
 export const routes: Routes = [
   {
